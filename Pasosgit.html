@@ -1,0 +1,83 @@
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/CarpetaGit (master)
+$ pwd
+/c/Users/APRENDIZSENA/Desktop/CarpetaGit
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/CarpetaGit (master)
+$ cd ..
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop
+$ cd ./ManualGit/
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit
+$ git init
+Initialized empty Git repository in C:/Users/APRENDIZSENA/Desktop/ManualGit/.git/
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git remote add origin https://github.com/Matthew2720/RepositorioGit.git
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git fetch origin master
+fatal: couldn't find remote ref master
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git branch -M master
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Matthew2720/RepositorioGit.git'
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git remote -v
+origin  https://github.com/Matthew2720/RepositorioGit.git (fetch)
+origin  https://github.com/Matthew2720/RepositorioGit.git (push)
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        css/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git add .
+g
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git commit -m "Primer commit"
+[master (root-commit) dcae6b7] Primer commit
+ 2 files changed, 60 insertions(+)
+ create mode 100644 css/estilos.css
+ create mode 100644 index.html
+
+MEDDFPREAGOD261+APRENDIZSENA@MEDDFPREAGOD261 MINGW64 ~/Desktop/ManualGit (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 876 bytes | 876.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Matthew2720/RepositorioGit.git
+ * [new branch]      master -> master
